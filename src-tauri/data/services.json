@@ -1,0 +1,216 @@
+{
+  "categories": [
+    {
+      "id": 41,
+      "name": "Bleaching",
+      "services": [
+        {
+          "id": 52,
+          "name": "Farbabzug",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 4,
+              "name": "50ml",
+              "price": "51"
+            },
+            {
+              "id": 5,
+              "name": "100ml",
+              "price": "56.5"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "name": "Aufhellung",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 6,
+              "name": "Ansatz",
+              "price": "30"
+            },
+            {
+              "id": 7,
+              "name": "Komplett",
+              "price": "60"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "name": "Glossing",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 8,
+              "name": "Kurzes Haar",
+              "price": "18.5"
+            },
+            {
+              "id": 9,
+              "name": "Mittellanges Haar",
+              "price": "28"
+            },
+            {
+              "id": 10,
+              "name": "Langes Haar",
+              "price": "56"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "Painting",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 123,
+              "name": "Mittellanges Haar",
+              "price": "56"
+            },
+            {
+              "id": 13,
+              "name": "Langes Haar",
+              "price": "106.5"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "name": "Keraplex",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 14,
+              "name": "Kurzes Haar",
+              "price": "20"
+            },
+            {
+              "id": 15,
+              "name": "Langes Haar",
+              "price": "40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Damen",
+      "services": [
+        {
+          "id": 57,
+          "name": "Waschen, Schneiden, Föhnen",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 16,
+              "name": "Spitzen",
+              "price": "40"
+            },
+            {
+              "id": 17,
+              "name": "Komplett",
+              "price": "45"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "name": "Pony schneiden",
+          "price": "51.55",
+          "sub_services": []
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Herren",
+      "services": [
+        {
+          "id": 60,
+          "name": "Herren Haarschnitt",
+          "price": "17",
+          "sub_services": []
+        },
+        {
+          "id": 61,
+          "name": "Maschinenschnitt",
+          "price": "10",
+          "sub_services": []
+        },
+        {
+          "id": 62,
+          "name": "Bart und Rasur",
+          "price": "9.5",
+          "sub_services": []
+        },
+        {
+          "id": 63,
+          "name": "Herren (Farbe)",
+          "price": "21",
+          "sub_services": []
+        },
+        {
+          "id": 64,
+          "name": "Waschen, Schneiden, Styling",
+          "price": "25.5",
+          "sub_services": []
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Kinder",
+      "services": [
+        {
+          "id": 65,
+          "name": "Jungs",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 26,
+              "name": "Waschen, Schneiden, Föhnen",
+              "price": "18"
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "name": "Kinder",
+          "price": null,
+          "sub_services": [
+            {
+              "id": 22,
+              "name": "bis 10 Jahre",
+              "price": "10"
+            },
+            {
+              "id": 23,
+              "name": "bis 15 Jahre",
+              "price": "15"
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "name": "Mädls",
+          "price": null,
+          "sub_services": []
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Test",
+      "services": []
+    },
+    {
+      "id": 46,
+      "name": "53w",
+      "services": []
+    }
+  ]
+}
