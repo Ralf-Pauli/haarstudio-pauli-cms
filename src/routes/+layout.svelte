@@ -11,7 +11,7 @@
 <ShadcnSidebar.Provider>
     <ModeWatcher />
     <Sidebar />
-    <Toaster />
+    <Toaster richColors />
     <main class="w-full h-full">
         <ShadcnSidebar.Trigger />
         <div class="px-12 py-5">

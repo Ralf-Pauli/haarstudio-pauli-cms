@@ -6,6 +6,7 @@
         type VisibilityState,
         type RowSelectionState,
         type ExpandedState,
+        type TableOptions,
         getCoreRowModel,
         getSortedRowModel,
         getFilteredRowModel,
@@ -23,6 +24,8 @@
     import DataTable from "./DataTable.svelte"
     import {Plus} from "lucide-svelte";
     import AddEntryDialog from "@/components/services/AddEntryDialog.svelte";
+    import {get, writable} from "svelte/store";
+    import DeleteEntryButton from "@/components/services/DeleteEntryButton.svelte";
 
 
     type DataTableProps<TData, TValue> = {
@@ -30,7 +33,7 @@
         data: TData[];
     };
 
-    let {data = $bindable(), columns, table = $bindable(), type, parentRow} = $props();
+    let {data = $bindable(), tableData = $bindable(), columns, table = $bindable(), type, parentRow} = $props();
 
     let sorting = $state<SortingState>([]);
     let columnFilters = $state<ColumnFiltersState>([]);
@@ -38,8 +41,7 @@
     let rowSelection = $state<RowSelectionState>({});
     let expanded = $state<ExpandedState>({});
 
-
-    table = createSvelteTable({
+    const options = writable<TableOptions<unknown>>({
         get data() {
             return data;
         },
@@ -109,6 +111,8 @@
             },
         }
     });
+
+    table = createSvelteTable(get(options));
 </script>
 
 <div class="mt-3">
@@ -125,7 +129,8 @@
                 }}
         />
 
-        <AddEntryDialog bind:data={data} {type} {parentRow} />
+        <AddEntryDialog bind:data {type} {parentRow} />
+        <DeleteEntryButton bind:data entries={table.getSelectedRowModel().rows} {type} {tableData} />
 
         <DropdownMenu.Root>
             <DropdownMenu.Trigger>
@@ -177,11 +182,11 @@
                             </Table.Cell>
                         {/each}
                     </Table.Row>
-                    {#if row.getIsExpanded() && row.original.services}
+                    {#if row.getIsExpanded() && row.original.services !== undefined}
                         <Table.Row>
                             <Table.Cell colspan={row.getAllCells().length}>
                                 <div class="px-5">
-                                    <DataTable data={row.original.services} columns={serviceColumns} type="service" parentRow={row.original} />
+                                    <DataTable data={row.original.services} columns={serviceColumns} type="service" parentRow={row.original} tableData={data} />
                                 </div>
                             </Table.Cell>
                         </Table.Row>
@@ -189,7 +194,7 @@
                         <Table.Row>
                             <Table.Cell colspan={row.getAllCells().length}>
                                 <div class="px-5">
-                                    <DataTable data={row.original.sub_services} columns={subServiceColumns} type="sub_service" parentRow={row.original} />
+                                    <DataTable data={row.original.sub_services} columns={subServiceColumns} type="sub_service" parentRow={row.original} {tableData} />
                                 </div>
                             </Table.Cell>
                         </Table.Row>

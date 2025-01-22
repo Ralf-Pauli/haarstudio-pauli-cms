@@ -31,3 +31,8 @@ export function createEditableCell(row: any, fieldKey: keyof typeof row.original
         },
     });
 }
+
+export async function saveCategories(categories: Category[]) {
+    const result = await save(categories);
+    console.log(result);
+}

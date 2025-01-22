@@ -57,13 +57,7 @@ export const serviceColumns: ColumnDef<Service>[] = [
     {
         id: "actions",
         cell: ({row}) => {
-            return renderComponent(DataTableActions, {id: row.original.id});
+            return renderComponent(DataTableActions, {row: row});
         }
     },
-    {
-        id: "collapse",
-        cell: ({row}) => {
-            return renderComponent(CollapseButton, {row})
-        }
-    }
 ]

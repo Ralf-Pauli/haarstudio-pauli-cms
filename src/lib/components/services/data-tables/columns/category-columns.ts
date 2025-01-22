@@ -6,7 +6,7 @@ import DataTableNameButton from "@/components/services/data-tables/controls/Data
 import {Checkbox} from "@/components/ui/checkbox";
 import CollapseButton from "@/components/services/data-tables/controls/CollapseButton.svelte";
 import EditableCell from "@/components/services/data-tables/controls/EditableCell.svelte";
-import  {createEditableCell} from "$utils"
+import {createEditableCell} from "$utils"
 
 export const categoryColumns: ColumnDef<Category>[] = [
     {
@@ -38,7 +38,7 @@ export const categoryColumns: ColumnDef<Category>[] = [
         header: ({column}) =>
             renderComponent(DataTableNameButton, {
                 onclick: () => column.toggleSorting(column.getIsSorted() === "asc"),
-        }),
+            }),
         cell: ({row}) => {
             return createEditableCell(row, "name");
         }
@@ -46,13 +46,7 @@ export const categoryColumns: ColumnDef<Category>[] = [
     {
         id: "actions",
         cell: ({row}) => {
-            return renderComponent(DataTableActions, {id: row.original.id});
+            return renderComponent(DataTableActions, {row: row});
         }
     },
-    {
-        id: "collapse",
-        cell: ({row}) => {
-            return renderComponent(CollapseButton, {row})
-        }
-    }
 ]

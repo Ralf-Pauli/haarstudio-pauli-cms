@@ -20,3 +20,9 @@ export interface SubService {
     name: string;
     price?: Decimal;
 }
+
+export const ENTRY_TYPES = {
+    CATEGORY: "category",
+    SERVICE: "service",
+    SUB_SERVICE: "sub_service",
+} as const;
