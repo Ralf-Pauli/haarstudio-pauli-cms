@@ -17,12 +17,12 @@
         },
         {
             title: "Galerie",
-            url: "#",
+            url: "/gallery",
             icon: Images,
         },
         {
             title: "Kontakt",
-            url: "#",
+            url: "/contact",
             icon: CircleUser,
         }
     ];
@@ -55,6 +55,10 @@
             <Sidebar.MenuItem>
                 <Sidebar.MenuButton>
                     {#snippet child({ props })}
+                        <a href="/images" {...props}>
+                            <Images />
+                            <span>Images</span>
+                        </a>
                         <a href="/settings" {...props}>
                             <Settings />
                             <span>Settings</span>

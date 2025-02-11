@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": 41,
-      "name": "Bleaching",
+      "name": "Bleachingsss",
       "services": [
         {
           "id": 52,
@@ -26,11 +26,6 @@
           "name": "Aufhellung",
           "price": null,
           "sub_services": [
-            {
-              "id": 6,
-              "name": "Ansatz",
-              "price": "30"
-            },
             {
               "id": 7,
               "name": "Komplett",
@@ -120,7 +115,7 @@
         {
           "id": 58,
           "name": "Pony schneiden",
-          "price": "51.55",
+          "price": "123",
           "sub_services": []
         }
       ]
@@ -201,16 +196,6 @@
           "sub_services": []
         }
       ]
-    },
-    {
-      "id": 45,
-      "name": "Test",
-      "services": []
-    },
-    {
-      "id": 46,
-      "name": "53w",
-      "services": []
     }
   ]
 }

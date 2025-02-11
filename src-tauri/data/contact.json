@@ -1,0 +1,129 @@
+{
+  "address": {
+    "city": "Aholming",
+    "zip_code": "94527",
+    "street": "Lerchenweg",
+    "house_number": "9"
+  },
+  "contact_information": {
+    "phone_number": "+49 15124235034"
+  },
+  "opening_hours": [
+    {
+      "begin": "08:00:00.000",
+      "end": "17:30:00.000",
+      "closed": false,
+      "days": "Dienstag - Freitag"
+    },
+    {
+      "begin": "08:00:00.000",
+      "end": "12:30:00.000",
+      "closed": false,
+      "days": "Samstag"
+    }
+  ],
+  "social_media": [
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/people/Haarstudio-Pauli/61553966530565/",
+      "icon": {
+        "name": "facebook_white.png",
+        "alternative_text": "Facebook Logo",
+        "width": 2084,
+        "height": 2084,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_Facebook_Logo_Secondary.png",
+            "width": 156,
+            "height": 156,
+            "size": 4.32,
+            "url": "/uploads/thumbnail_Facebook_Logo_Secondary_8543ac0d17.png"
+          },
+          "large": {
+            "name": "large_Facebook_Logo_Secondary.png",
+            "width": 1000,
+            "height": 1000,
+            "size": 36.16,
+            "url": "/uploads/large_Facebook_Logo_Secondary_8543ac0d17.png"
+          },
+          "medium": {
+            "name": "medium_Facebook_Logo_Secondary.png",
+            "width": 750,
+            "height": 750,
+            "size": 26.17,
+            "url": "/uploads/medium_Facebook_Logo_Secondary_8543ac0d17.png"
+          },
+          "small": {
+            "name": "small_Facebook_Logo_Secondary.png",
+            "width": 500,
+            "height": 500,
+            "size": 16.59,
+            "url": "/uploads/small_Facebook_Logo_Secondary_8543ac0d17.png"
+          }
+        },
+        "size": 24.69,
+        "url": "/uploads/Facebook_Logo_Secondary_8543ac0d17.png"
+      }
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/pauli.tatjana",
+      "icon": {
+        "name": "instagram_white.png",
+        "alternative_text": "Instagram Logo",
+        "width": 4322,
+        "height": 4320,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_Instagram_Glyph_White.png",
+            "width": 156,
+            "height": 156,
+            "size": 7.14,
+            "url": "/uploads/thumbnail_Instagram_Glyph_White_4ead704eea.png"
+          },
+          "large": {
+            "name": "large_Instagram_Glyph_White.png",
+            "width": 1000,
+            "height": 1000,
+            "size": 60.43,
+            "url": "/uploads/large_Instagram_Glyph_White_4ead704eea.png"
+          },
+          "medium": {
+            "name": "medium_Instagram_Glyph_White.png",
+            "width": 750,
+            "height": 750,
+            "size": 43.55,
+            "url": "/uploads/medium_Instagram_Glyph_White_4ead704eea.png"
+          },
+          "small": {
+            "name": "small_Instagram_Glyph_White.png",
+            "width": 500,
+            "height": 500,
+            "size": 26.9,
+            "url": "/uploads/small_Instagram_Glyph_White_4ead704eea.png"
+          }
+        },
+        "size": 86.18,
+        "url": "/uploads/Instagram_Glyph_White_4ead704eea.png"
+      }
+    },
+    {
+      "name": "asdf",
+      "url": "sdf",
+      "icon": {
+        "name": "CheckPoint_6fe87_7e706800_3b47e4b.png",
+        "alternative_text": "CheckPoint_6fe87_7e706800_3b47e4b.png",
+        "width": 0,
+        "height": 0,
+        "formats": {
+          "thumbnail": null,
+          "large": null,
+          "medium": null,
+          "small": null
+        },
+        "size": 59731.0,
+        "url": "blob:http://localhost:1420/65dc8a98-79f2-46cf-9594-0afa88f09964"
+      }
+    }
+  ]
+}
