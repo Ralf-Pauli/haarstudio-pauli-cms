@@ -9,5 +9,5 @@ pub struct Contact {
     address: Address,
     contact_information: HashMap<String, String>,
     opening_hours: Vec<OpeningHours>,
-    social_media: Vec<SocialMedia>,
+    pub social_media: Vec<SocialMedia>,
 }

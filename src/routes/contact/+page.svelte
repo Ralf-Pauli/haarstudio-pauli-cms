@@ -1,14 +1,11 @@
 <script lang="ts">
     import {Input} from "@/components/ui/input";
     import {Label} from "@/components/ui/label";
-    import {Separator} from "@/components/ui/separator";
-    import {Checkbox} from "@/components/ui/checkbox";
     import Toolbar from "@/components/services/Toolbar.svelte";
     import {saveContact} from "$utils";
     import {Button} from "@/components/ui/button";
-    import {Plus, Trash2} from "lucide-svelte";
+    import {Trash2} from "lucide-svelte";
     import AddContactInformationDialog from "@/components/contact/AddContactInformationDialog.svelte";
-    import {ENTRY_TYPES} from "$utils/interfaces";
     import OpeningHour from "@/components/contact/OpeningHours.svelte";
     import {formatKey} from "$utils";
     import SocialMediaEntries from "@/components/contact/SocialMediaEntries.svelte";

@@ -3,7 +3,7 @@ use crate::models::contact::image_details::ImageDetails;
 
 #[derive(Serialize, Deserialize)]
 pub struct SocialMedia {
-    name: String,
+    pub(crate) name: String,
     url: String,
-    icon: ImageDetails,
+    pub icon: ImageDetails,
 }

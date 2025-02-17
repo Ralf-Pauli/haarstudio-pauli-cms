@@ -1,3 +1,4 @@
+use std::fmt::write;
 use std::io; // Already public since it's from the standard library
 use serde_json;
 use tauri::ipc::InvokeError;
@@ -8,6 +9,12 @@ pub enum FileError {  // Now public
     IOError(io::Error),
     SerdeError(serde_json::Error),
     Other(String),
+    ProcessingError {
+        message: String,
+    },
+    ValidationError {
+        message: String,
+    },
 }
 
 impl std::fmt::Display for FileError {
@@ -17,6 +24,12 @@ impl std::fmt::Display for FileError {
             FileError::IOError(err) => write!(f, "IO error: {}", err),
             FileError::SerdeError(err) => write!(f, "Serde JSON error: {}", err),
             FileError::Other(msg) => write!(f, "Other error: {}", msg),
+            FileError::ProcessingError { message, .. } => {
+                write!(f, "Processing error: {}", message)
+            }
+            FileError::ValidationError { message } => {
+                write!(f, "Validation error: {}", message)
+            }
         }
     }
 }

@@ -55,10 +55,10 @@
             <Sidebar.MenuItem>
                 <Sidebar.MenuButton>
                     {#snippet child({ props })}
-                        <a href="/images" {...props}>
+                        <!--<a href="/images" {...props}>
                             <Images />
                             <span>Images</span>
-                        </a>
+                        </a>-->
                         <a href="/settings" {...props}>
                             <Settings />
                             <span>Settings</span>
